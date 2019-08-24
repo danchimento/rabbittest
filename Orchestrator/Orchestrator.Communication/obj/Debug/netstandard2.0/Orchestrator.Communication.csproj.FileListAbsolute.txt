@@ -1,0 +1,9 @@
+C:\projects\Bernstein\Orchestrator\Orchestrator.Communication\bin\Debug\netstandard2.0\Orchestrator.Communication.deps.json
+C:\projects\Bernstein\Orchestrator\Orchestrator.Communication\bin\Debug\netstandard2.0\Orchestrator.Communication.dll
+C:\projects\Bernstein\Orchestrator\Orchestrator.Communication\obj\Debug\netstandard2.0\Orchestrator.Communication.csprojAssemblyReference.cache
+C:\projects\Bernstein\Orchestrator\Orchestrator.Communication\obj\Debug\netstandard2.0\Orchestrator.Communication.csproj.CoreCompileInputs.cache
+C:\projects\Bernstein\Orchestrator\Orchestrator.Communication\obj\Debug\netstandard2.0\Orchestrator.Communication.AssemblyInfoInputs.cache
+C:\projects\Bernstein\Orchestrator\Orchestrator.Communication\obj\Debug\netstandard2.0\Orchestrator.Communication.AssemblyInfo.cs
+C:\projects\Bernstein\Orchestrator\Orchestrator.Communication\bin\Debug\netstandard2.0\Orchestrator.Communication.pdb
+C:\projects\Bernstein\Orchestrator\Orchestrator.Communication\obj\Debug\netstandard2.0\Orchestrator.Communication.dll
+C:\projects\Bernstein\Orchestrator\Orchestrator.Communication\obj\Debug\netstandard2.0\Orchestrator.Communication.pdb

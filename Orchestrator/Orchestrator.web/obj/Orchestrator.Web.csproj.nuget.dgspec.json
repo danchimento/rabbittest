@@ -1,0 +1,139 @@
+{
+  "format": 1,
+  "restore": {
+    "C:\\projects\\Bernstein\\Orchestrator\\Orchestrator.Web\\Orchestrator.web.csproj": {}
+  },
+  "projects": {
+    "C:\\projects\\Bernstein\\Orchestrator\\Orchestrator.Communication\\Orchestrator.Communication.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\projects\\Bernstein\\Orchestrator\\Orchestrator.Communication\\Orchestrator.Communication.csproj",
+        "projectName": "Orchestrator.Communication",
+        "projectPath": "C:\\projects\\Bernstein\\Orchestrator\\Orchestrator.Communication\\Orchestrator.Communication.csproj",
+        "packagesPath": "C:\\Users\\dchimento\\.nuget\\packages\\",
+        "outputPath": "C:\\projects\\Bernstein\\Orchestrator\\Orchestrator.Communication\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\dchimento\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "netstandard2.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Users\\dchimento\\source\\repos\\Carrot2\\CarrotFarmCommunication\\bin\\Debug": {},
+          "https://api.nuget.org/v3/index.json": {},
+          "https://pkgs.dev.azure.com/brightwell/_packaging/BrightwellPackages/nuget/v3/index.json": {}
+        },
+        "frameworks": {
+          "netstandard2.0": {
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netstandard2.0": {
+          "dependencies": {
+            "NETStandard.Library": {
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[2.0.3, )",
+              "autoReferenced": true
+            },
+            "RabbitMQ.Client": {
+              "target": "Package",
+              "version": "[6.0.0-pre3, )"
+            }
+          },
+          "imports": [
+            "net461"
+          ],
+          "assetTargetFallback": true,
+          "warn": true
+        }
+      }
+    },
+    "C:\\projects\\Bernstein\\Orchestrator\\Orchestrator.Web\\Orchestrator.web.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\projects\\Bernstein\\Orchestrator\\Orchestrator.Web\\Orchestrator.web.csproj",
+        "projectName": "Orchestrator.web",
+        "projectPath": "C:\\projects\\Bernstein\\Orchestrator\\Orchestrator.Web\\Orchestrator.web.csproj",
+        "packagesPath": "C:\\Users\\dchimento\\.nuget\\packages\\",
+        "outputPath": "C:\\projects\\Bernstein\\Orchestrator\\Orchestrator.Web\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\dchimento\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "netcoreapp2.1"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Users\\dchimento\\source\\repos\\Carrot2\\CarrotFarmCommunication\\bin\\Debug": {},
+          "https://api.nuget.org/v3/index.json": {},
+          "https://pkgs.dev.azure.com/brightwell/_packaging/BrightwellPackages/nuget/v3/index.json": {}
+        },
+        "frameworks": {
+          "netcoreapp2.1": {
+            "projectReferences": {
+              "C:\\projects\\Bernstein\\Orchestrator\\Orchestrator.Communication\\Orchestrator.Communication.csproj": {
+                "projectPath": "C:\\projects\\Bernstein\\Orchestrator\\Orchestrator.Communication\\Orchestrator.Communication.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netcoreapp2.1": {
+          "dependencies": {
+            "Microsoft.AspNetCore.App": {
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[2.1.1, )",
+              "autoReferenced": true
+            },
+            "Microsoft.AspNetCore.Razor.Design": {
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[2.1.2, )"
+            },
+            "Microsoft.NETCore.App": {
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[2.1.0, )",
+              "autoReferenced": true
+            },
+            "Microsoft.VisualStudio.Azure.Containers.Tools.Targets": {
+              "target": "Package",
+              "version": "[1.4.10, )"
+            }
+          },
+          "imports": [
+            "net461"
+          ],
+          "assetTargetFallback": true,
+          "warn": true
+        }
+      }
+    }
+  }
+}
