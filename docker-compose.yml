@@ -1,32 +1,32 @@
-version: '3'
+version: '3.7'
 services:
   orchestrator:
-    image: "aspnetapp"
+    image: "orchestrator:latest"
     restart: on-failure
     depends_on:
-      - "rabbit"
+      - "gateway"
+    ports:
+      - "5001:80"
+  card:
+    image: "card:latest"
+    restart: on-failure
+    deploy:
+      replicas: 3
+    depends_on:
+      - "gateway"
+    ports:
+      - "5002:80"
+  gateway:
+    image: "gateway:latest"
     ports:
       - "5000:80"
-    # networks:
-    #   - localnet
-  consumer:
-    image: "consumerapp"
-    restart: on-failure
-    depends_on:
-      - "rabbit"
-  rabbit:
-    image: "rabbitmq:3-management"
-    hostname: "rabbit"
-    ports:
-      - "15673:15672"
-    healthcheck:
-        test: ["CMD", "curl", "-f", "http://localhost:5672"]
-        interval: 30s
-        timeout: 10s
-        retries: 5
-    # networks:
-    #   - localnet
-# networks:
-#   localnet:
-#     external:
-#       name: localnet
+  # rabbit:
+  #   image: "rabbitmq:3-management"
+  #   hostname: "rabbit"
+  #   ports:
+  #     - "15673:15672"
+  #   healthcheck:
+  #       test: ["CMD", "curl", "-f", "http://localhost:5672"]
+  #       interval: 30s
+  #       timeout: 10s
+  #       retries: 5
